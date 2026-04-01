@@ -1,0 +1,25 @@
+{
+  "name": "electricity-calculator",
+  "version": "1.0.0",
+  "description": "A web application built using HTML, CSS, JavaScript, and Node.js that allows users to calculate household electricity consumption and generate the corresponding bill instantly based on previous and current meter readings.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pravesh32/Electricity-Calculator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Pravesh32/Electricity-Calculator/issues"
+  },
+  "homepage": "https://github.com/Pravesh32/Electricity-Calculator#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
