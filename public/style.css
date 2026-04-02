@@ -9,10 +9,11 @@
 /* Body */
 body {
     background: linear-gradient(135deg, #4ade80, #16a34a);
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 /* Container */
@@ -21,37 +22,42 @@ body {
     padding: 40px 50px;
     border-radius: 20px;
     text-align: center;
-    width: 350px;
+    width: 100%;
+    max-width: 400px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
 }
 
 /* Heading */
 h1 {
     color: #22c55e;
     margin-bottom: 15px;
-    font-size: 28px;
+    font-size: 2rem;
 }
 
 /* Description Paragraphs */
 .container p {
     color: #cbd5e1;
-    font-size: 14px;
+    font-size: 0.9rem;
     margin-bottom: 10px;
 }
 
 /* Input fields */
 input[type="number"] {
     width: 80%;
+    max-width: 300px;
     padding: 12px;
     margin: 12px 0;
     border-radius: 10px;
     border: none;
     font-size: 16px;
+    transition: all 0.2s ease;
 }
 
 /* Button */
 button {
     width: 50%;
+    max-width: 200px;
     padding: 12px;
     background: #22c55e;
     border: none;
@@ -74,22 +80,41 @@ button:hover {
     padding: 15px;
     border-radius: 12px;
     color: #fefefe;
-    font-size: 18px;
+    font-size: 1.1rem;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    word-wrap: break-word;
 }
 
 /* Responsive */
-@media(max-width: 400px) {
+@media(max-width: 600px) {
     .container {
-        width: 90%;
-        padding: 20px;
+        padding: 30px 25px;
     }
-
+    h1 {
+        font-size: 1.8rem;
+    }
+    input[type="number"] {
+        width: 90%;
+    }
     button {
         width: 60%;
     }
+}
 
+@media(max-width: 400px) {
+    .container {
+        padding: 20px 15px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
     input[type="number"] {
-        width: 90%;
+        width: 95%;
+        font-size: 14px;
+    }
+    button {
+        width: 70%;
+        font-size: 14px;
+        padding: 10px;
     }
 }
